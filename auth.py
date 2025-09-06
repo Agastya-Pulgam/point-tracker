@@ -68,6 +68,3 @@ def logout(choice):
 
     else:
         return 'logout attempt failed'
-
-
-

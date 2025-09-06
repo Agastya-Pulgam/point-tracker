@@ -8,7 +8,6 @@ def get_cursor():
         database='d1'
     )
     print('connected !!'if mydb.is_connected() else 'connection failed')
-    mycursor=mydb.cursor()
     mycursor=mydb.cursor(buffered=True)
 
     return mydb, mycursor

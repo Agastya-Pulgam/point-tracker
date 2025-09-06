@@ -11,11 +11,9 @@ def expense(event,balance_update):
 
     balance=('select sum(balance) from point_transaction')
     mycursor.execute(balance)
-    result=mycursor.fetchone()
+    result=mycursor.fetchone()[0]
 
     current_balance=result[0] if result[0] is not None else 1000
-    event=input('enter event : ')
-    balance_update=int(input('enter amount of points spent : '))
     new_balance=current_balance-balance_update
     if new_balance<0:
         
