@@ -1,7 +1,7 @@
 from auth import login,logout
 from db import get_cursor
-from finance import add_income 
-from finance import expense
+from finance_test import add_income 
+from finance_test import expense
 
 def main():
     
